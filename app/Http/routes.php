@@ -14,6 +14,21 @@
 Route::get('/contacto', function () {
     return view('contacto');
 });
-Route::get('/', function () {
-    return view('inicio');
+Route::get('/admin', function () {
+    return view('admin.principal');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/', 'SitioController@index');
+
+Route::get('/productos', 'SitioController@productos');
+
+Route::get('/login', 'SitioController@login');
+
+Route::get('/contacto', 'SitioController@contacto');
+
+Route::get('/acerca', 'SitioController@acerca');
+

@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #fff;
+
+}
+header{
+	width: 100%;
+}
+.encabezado{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-image: url("/images/encabezado.jpg");
+}
+.logotipo{
+	float:hidden;
+}
+
+nav{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #ff8900;
+}
+.menubar{
+	display: none;
+}
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+}
+header nav ul li{
+	float: left;
+} 
+header nav ul li a{
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	font-family: verdana;
+	display: block;
+}
+.iconos{
+	margin-right: 20px;
+}
+header nav ul li a:hover{
+	background: #037e8c;
+}
+section{
+	padding: 20px;
+}
+
+.logotipo{
+	width: 150px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+	header nav{
+		width: 70%;
+		height: 100%;
+		margin: 0;
+		position: fixed;
+		left: -100%;
+	}
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom:1px solid rgba(255,255,255,.3);
+
+	}
+	.menubar{
+		display: block;
+		width: 100%;
+		background: #ccc;
+	}
+	.menubar .btn{
+		display: block;
+		padding: 20px;
+		margin: 0;
+		background: #024959;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1em;
+		font-family: verdana;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.menubar span{
+		float:right;
+	}
+	.menubar span .iconos{
+		width: 1.3em;
+	}
+	
+}
